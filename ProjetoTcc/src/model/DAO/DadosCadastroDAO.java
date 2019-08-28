@@ -21,9 +21,8 @@ public class DadosCadastroDAO {
     
         try{
             con  = (Connection) new Conexao().getConnection();
-            String sql = "insert into login (usuario_id, nome, email, usuario, senha, telefone, data_cadastro) values (default, ?, ?, ?, ?, ?, ?, ?)";
+            String sql = "insert into login (usuario_id, nome, email, usuario, senha, telefone, data_cadastro) values (default, ?, ?, ?, ?, ?, ?)";
             PreparedStatement stmt = con.prepareStatement(sql);
-            //stmt.setInt(1, dC.getUsuario_id());
             stmt.setString(1, dC.getNome());
             stmt.setString(2, dC.getEmail());
             stmt.setString(3, dC.getUsuario());
@@ -41,6 +40,4 @@ public class DadosCadastroDAO {
         
         return inseriu;
     }
-    
-    
 }
