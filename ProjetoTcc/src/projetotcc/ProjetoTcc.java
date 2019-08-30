@@ -27,8 +27,8 @@ public class ProjetoTcc extends Application {
         
         primaryStage.setTitle("Cadastro");
         
-        Parent fxmlCadastro = FXMLLoader.load(this.getClass().getResource("/View/ViewCadastro.fxml")); 
-        primaryStage.setScene(new Scene(fxmlCadastro, 640, 400));
+        Parent fxmlCadastro = FXMLLoader.load(this.getClass().getResource("/Views/Login/ViewLogin.fxml")); 
+        primaryStage.setScene(new Scene(fxmlCadastro, 1300, 680));
         
         primaryStage.show();
         

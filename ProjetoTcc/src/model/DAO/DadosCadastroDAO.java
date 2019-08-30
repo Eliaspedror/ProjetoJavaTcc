@@ -1,6 +1,6 @@
 package model.DAO;
 
-import Connection.Conexao;
+import connection.Conexao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
